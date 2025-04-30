@@ -23,7 +23,7 @@ public class PublisherController {
 
     @PutMapping("/publish")
     public ResponseEntity publishTopic() throws InterruptedException {
-        int count = 100;
+        int count = 10;
         while (count > 0) {
             publisherService.publishMessage("Rider " + count);
             Thread.sleep(1000);

@@ -3,7 +3,8 @@ package com.kafka.consumer.service;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
-import static org.springframework.kafka.support.KafkaHeaders.TOPIC;
+import static com.kafka.consumer.contant.Appconstant.TOPIC;
+
 
 @Service
 public class consumerService {
